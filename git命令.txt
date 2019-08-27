@@ -1,0 +1,21 @@
+Git命令：
+1、检查Git版本号：git --version
+2、创建文件：touch index.html
+3、初始化本地git仓库：git init
+4、添加文件到本地仓库：git add index.html
+说明：添加某一类文件：git add *.html 
+      添加所有文件：git add .
+5、查看本地仓库状态：git status
+6、提交添加的文件到本地仓库：git commit -m '本次修改的说明'
+7、忽略不想提交的文件：创建忽略配置文件(.gitignore)，在把需要忽略的文件写在里面
+8、创建分支：git branch branch-name
+9、切换到分支：git checkout branch-name
+说明：在分支中所作的修改，不会影响到master
+10、合并分支：先切换回master：git checkout master
+                        在合并分支到master：git merge login
+远程仓库Remote:
+1、查看远程仓库：git remote
+2、创建远程仓库：git remote origin account@github.git
+3、推送到远程仓库：git push -u origin master
+说明：当第一次push 的时候使用上面的命令，后面只需要:git push即可
+4、clone远程仓库：复制github的clone仓库地址，使用命令：git clone clone_url
